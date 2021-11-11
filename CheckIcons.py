@@ -5,6 +5,7 @@ from sklearn.cluster import KMeans
 def CheckIcons(save_csv=False):
     all_icons_data = {}
     for (r, d, f) in os.walk('./Icons'):
+        f.remove('.gitignore')
         for icon_file in f:
             original = io.imread('./Icons/' + icon_file)
             arr = original.reshape((-1, 3))

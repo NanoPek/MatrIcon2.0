@@ -45,4 +45,5 @@ def GIFCreate(first_frame: int, last_frame: int, step: int, nbr_icons_row: int,f
 
 
 if __name__ == "__main__":
-    GIFCreate(first_frame=2,last_frame=22,step=2,nbr_icons_row=128,final_size=2048)
+    Create(nbr_icons_row=256,n_colors=493,final_size=4096)
+    #GIFCreate(first_frame=1,last_frame=32,step=2,nbr_icons_row=256,final_size=1024)
